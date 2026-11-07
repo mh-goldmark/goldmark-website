@@ -1,0 +1,76 @@
+User-agent: *
+Allow: /
+Disallow: /temp/
+Disallow: /404.php
+
+User-agent: Googlebot
+Allow: /
+Disallow: /temp/
+Disallow: /404.php
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+Disallow: /temp/
+Disallow: /404.php
+
+User-agent: BingBot
+Allow: /
+Disallow: /temp/
+Disallow: /404.php
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: AhrefsSiteAudit
+Disallow: /
+
+User-agent: adbeat_bot
+Disallow: /
+
+User-agent: Alexibot
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: Blexbot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: rogerbot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SEOkicks-Robot
+Disallow: /
+
+User-agent: Xenu's
+Disallow: /
+
+User-agent: LINER Bot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Awar.ioBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://www.goldmark.ae/sitemap_index.xml

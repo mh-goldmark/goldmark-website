@@ -1,0 +1,213 @@
+<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+SetHandler application/x-lsphp74
+</FilesMatch>
+
+RewriteEngine On
+RewriteOptions inherit
+Options +FollowSymlinks
+Options -Multiviews
+Options All -Indexes
+ErrorDocument 404 /404.php
+
+RewriteCond %{HTTP_HOST} !=""
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+RewriteBase /
+
+#STATIC PAGES PAGE RE-WRITE
+
+#About Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^about-gold-mark-real-estate.html\/?$ about.php [L]
+
+#Contact Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^contact-gold-mark-real-estate.html\/?$ contact.php [L]
+
+#Media Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^gold-mark-real-estate-media.html\/?$ media.php [L]
+
+#List a Property Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^gold-mark-real-estate-list-property.html\/?$ list.php [L]
+
+#Teams Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^gold-mark-real-estate-team.html\/?$ experts.php [L]
+
+#Career Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^gold-mark-real-estate-career.html\/?$ career.php [L]
+
+#Terms and Conditions Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^terms-and-conditions.html\/?$ terms.php [L]
+
+#Privacy Policy Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^privacy-policy.html\/?$ policy.php [L]
+
+#Website Cookies Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^website-cookies.html\/?$ cookies.php [L]
+
+#Popular Communities Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^communities.html\/?$ communities.php [L]
+
+#New Developments Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^developments.html\/?$ developments.php [L]
+
+#Listings Map Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^map.html\/?$ map.php [L]
+
+#Projects Map Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^projects/map.html$ map.php?category=Projects [L]
+
+#DYNAMIC PAGES PAGE RE-WRITE
+
+#RESIDENTIALS
+#Residentials for Sale Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^residentials-for-sale.html\/?$ properties.php?category=Residential&class=Sale [L]
+
+#Residentials for Rent Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^residentials-for-rent.html\/?$ properties.php?category=Residential&class=Rent [L]
+
+#Apartments for Sale Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^apartments-for-sale.html\/?$ properties.php?type=Apartment&category=Residential&class=Sale [L]
+
+#Villas for Sale Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^villas-for-sale.html\/?$ properties.php?type=Villa&category=Residential&class=Sale [L]
+
+#Apartments for Rent Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^apartments-for-rent.html\/?$ properties.php?type=Apartment&category=Residential&class=Rent [L]
+
+#Villas for Rent Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^villas-for-rent.html\/?$ properties.php?type=Villa&category=Residential&class=Rent [L]
+
+#COMMERCIALS
+#Commercials for Sale Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^commercials-for-sale.html\/?$ properties.php?category=Commercial&class=Sale [L]
+
+#Commercials for Rent Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^commercials-for-rent-.html\/?$ properties.php?category=Commercial&class=Rent [L]
+
+#Offices for Sale Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^offices-for-sale.html\/?$ properties.php?type=Office&category=Commercial&class=Sale [L]
+
+#Offices for Rent Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^offices-for-rent.html\/?$ properties.php?type=Office&category=Commercial&class=Rent [L]
+
+#Offices for Sale Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^shops-for-sale.html\/?$ properties.php?type=Retail&category=Commercial&class=Sale [L]
+
+#Offices for Rent Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^shops-for-rent.html\/?$ properties.php?type=Retail&category=Commercial&class=Rent [L]
+
+#Buildings for Sale Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^buildings-for-sale.html\/?$ properties.php?type=Building&class=Sale [L]
+
+#Plots for Sale Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^plots-for-sale.html\/?$ properties.php?type=Land&class=Sale [L]
+
+#MISCELLANEOUS
+
+#Residential Details Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^residentials/.*-(\d+)\.html$ property.php?id=$1 [L]
+
+#Commercial Details Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^commercials/.*-(\d+)\.html$ property.php?id=$1 [L]
+
+#Project Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^new-developments/.*-(\d+)\.html$ project.php?id=$1 [L]
+
+#Short URL Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^go/([A-Za-z0-9-()]+)$ details.php?id=$1 [L]
+
+#Community Details Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^community-guides/.*-(\d+)\.html$ community.php?id=$1 [L]
+
+#Team Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^the-expert/.*-(\d+)\.html$ team.php?id=$1 [L]
+
+#Media Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^media-room/.*-(\d+)\.html$ article.php?id=$1 [L]
+
+#Vacancy Page Re-write
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^vacancies/.*-(\d+)\.html$ vacancy.php?id=$1 [L]
+
+#PROPERTY GURU
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^property-guru/sky-hills-2-by-hre-development.html$ submit.php?source=Property+Guru&project=Sky+Hills+2 [L]
