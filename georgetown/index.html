@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Georgetown UAE — Therapy. Support. Progress.</title>
+  <meta name="description" content="Providing compassionate, evidence-based therapy for children and families across the UAE.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom border-light">
+    <div class="container py-1">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+        <span class="logo-dots" aria-hidden="true">
+          <span class="dot dot-blue"></span>
+          <span class="dot dot-pink"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-teal"></span>
+        </span>
+        <span class="logo-text">Georgetown UAE</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#centers" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Centers</a>
+            <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+              <li><a class="dropdown-item" href="#dubai">Dubai</a></li>
+              <li><a class="dropdown-item" href="#abu-dhabi">Abu Dhabi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+            <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+              <li><a class="dropdown-item" href="#services">ABA Therapy</a></li>
+              <li><a class="dropdown-item" href="#services">Speech Therapy</a></li>
+              <li><a class="dropdown-item" href="#services">Occupational Therapy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline-primary btn-book rounded-pill px-3">Book an Appointment</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <h1 class="hero-title mb-2">Georgetown UAE</h1>
+            <p class="hero-tagline mb-3">Therapy. Support. Progress.</p>
+            <p class="hero-desc text-secondary mb-4">
+              Providing compassionate, evidence-based therapy for children and families across the UAE.
+            </p>
+            <span class="badge-therapy rounded-pill">
+              We provide ABA, Speech &amp; Occupational Therapy
+            </span>
+          </div>
+          <div class="col-lg-6">
+            <div class="map-frame mx-auto">
+              <div class="map-decor" aria-hidden="true"></div>
+              <svg class="uae-map" viewBox="0 0 420 360" role="img" aria-label="Map of the UAE showing Dubai and Abu Dhabi centers">
+                <!-- Simplified UAE outline (peninsula + eastern coast) -->
+                <path class="map-land" d="M55 200 C60 150, 85 110, 130 95 C170 82, 210 78, 255 85 C290 90, 320 80, 345 95 C370 110, 385 140, 388 175 C390 210, 375 245, 345 265 C310 288, 255 300, 200 295 C150 290, 105 270, 80 240 C65 222, 52 230, 55 200 Z"/>
+                <path class="map-land-accent" d="M300 100 C330 105, 360 130, 365 160 C368 185, 350 205, 325 208 C300 210, 280 190, 278 165 C276 140, 285 112, 300 100 Z"/>
+                <!-- Dubai pin -->
+                <g class="map-pin" transform="translate(318,125)">
+                  <circle class="pin-outer" r="13"/>
+                  <circle class="pin-inner" r="5.5"/>
+                  <text class="pin-label" x="18" y="0">Dubai</text>
+                  <text class="pin-sub" x="18" y="14">Georgetown Early Intervention Center</text>
+                </g>
+                <!-- Abu Dhabi pin -->
+                <g class="map-pin" transform="translate(160,235)">
+                  <circle class="pin-outer" r="13"/>
+                  <circle class="pin-inner" r="5.5"/>
+                  <text class="pin-label" x="18" y="0">Abu Dhabi</text>
+                  <text class="pin-sub" x="18" y="14">Georgetown Rehabilitation Center</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services py-4 py-lg-5">
+      <div class="container">
+        <div class="services-row d-flex flex-wrap justify-content-between align-items-stretch">
+          <div class="service-item text-center">
+            <div class="service-icon bg-soft-blue"><i class="bi bi-lightbulb"></i></div>
+            <div class="service-label">ABA Therapy</div>
+          </div>
+          <div class="service-item text-center">
+            <div class="service-icon bg-soft-sky"><i class="bi bi-chat-dots"></i></div>
+            <div class="service-label">Speech Therapy</div>
+          </div>
+          <div class="service-item text-center">
+            <div class="service-icon bg-soft-peach"><i class="bi bi-hand-index-thumb"></i></div>
+            <div class="service-label">Occupational Therapy</div>
+          </div>
+          <div class="service-item text-center">
+            <div class="service-icon bg-soft-lavender"><i class="bi bi-stars"></i></div>
+            <div class="service-label">Early Intervention</div>
+          </div>
+          <div class="service-item text-center">
+            <div class="service-icon bg-soft-mint"><i class="bi bi-heart"></i></div>
+            <div class="service-label">Educational Support</div>
+          </div>
+          <div class="service-item text-center">
+            <div class="service-icon bg-soft-blue"><i class="bi bi-mortarboard"></i></div>
+            <div class="service-label">And More</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome -->
+    <section id="about" class="welcome py-5">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="welcome-photo-wrap">
+              <img src="assets/img/welcome-child.jpg" alt="Child smiling at Georgetown UAE" class="welcome-photo img-fluid" width="640" height="800">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <h2 class="welcome-title mb-3">Welcome to Georgetown UAE</h2>
+            <p class="welcome-desc text-secondary mb-4">
+              With centers in Dubai and Abu Dhabi, we are proud to support children on their developmental journey, helping them reach their full potential.
+            </p>
+            <div class="row g-3" id="centers">
+              <div class="col-md-6" id="dubai">
+                <div class="location-card h-100">
+                  <div class="location-icon" aria-hidden="true">
+                    <svg viewBox="0 0 40 48" width="28" height="34" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <path d="M18 44V8h6v36"/>
+                      <path d="M14 18h4M24 14h4M14 26h4M24 22h4M14 34h4M24 30h4"/>
+                      <path d="M20 4v4"/>
+                      <rect x="10" y="40" width="20" height="4" rx="1"/>
+                    </svg>
+                  </div>
+                  <h3 class="location-name">Dubai</h3>
+                  <p class="location-sub mb-2">Georgetown Early Intervention Center</p>
+                  <a href="#contact" class="location-link">Learn More <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+              <div class="col-md-6" id="abu-dhabi">
+                <div class="location-card h-100">
+                  <div class="location-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 40" width="34" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <path d="M6 34h36"/>
+                      <path d="M10 34V18l6-8 6 8v16"/>
+                      <path d="M26 34V14l6-8 6 8v20"/>
+                      <path d="M14 22h4M30 18h4"/>
+                      <circle cx="16" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+                      <circle cx="32" cy="8" r="1.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                  </div>
+                  <h3 class="location-name">Abu Dhabi</h3>
+                  <p class="location-sub mb-2">Georgetown Rehabilitation Center</p>
+                  <a href="#contact" class="location-link">Learn More <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer slogan -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-slogan d-flex align-items-center justify-content-center gap-3">
+        <span class="slogan-line" aria-hidden="true"></span>
+        <p class="slogan-text mb-0">BUILDING BRIGHTER FUTURES TOGETHER</p>
+        <span class="slogan-line" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="footer-wave" aria-hidden="true"></div>
+  </footer>
+
+  <!-- Anchors for Resources (no extra section — links stay on-page) -->
+  <div id="resources" class="visually-hidden" aria-hidden="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
